@@ -28,6 +28,8 @@ Results for /highest-gpa
 Final GUI results for /all-student
 ![](final.png)
 
+The conclusion is most of the time bottleneck are caused by frequent calls to the database unnecessarily for many small queries (i.e. fetching courses by id). This causes the program to overutilize the CPU and underutilize the memory as the solution is to simply query all the subsequent repositories THEN perform needed calculations. 
+
 # Reflection
 
 1. What is the difference between the approach of performance testing with JMeter and profiling with IntelliJ Profiler in the context of optimizing application performance?
